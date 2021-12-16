@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99BBDA"
+    android:backgroundTint="#99BBDA"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TableRow android:backgroundTint="#99BBDA">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Название"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/tnameet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Описание"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/descret"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Дата"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/dateet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Время"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/timeet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <Button
+        android:layout_width="314dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#7C3288"
+        android:onClick="SaveTask"
+        android:text="Записать"
+        app:cornerRadius="50px" />
+</TableLayout>

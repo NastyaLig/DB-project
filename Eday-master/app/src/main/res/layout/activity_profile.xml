@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99BBDA"
+    android:backgroundTint="#99BBDA"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imageViewt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:paddingLeft="0dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Логин"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/logint"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Фимилия"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/surnamet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Имя"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/namet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp" />
+
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="824dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/cloud" />
+
+</TableLayout>

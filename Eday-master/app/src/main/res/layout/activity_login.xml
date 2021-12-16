@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99BBDA"
+    android:backgroundTint="#99BBDA">
+
+
+    <EditText
+        android:id="@+id/et_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:background="#74FFFFFF"
+        android:backgroundTint="#7AFFFFFF"
+        android:hint=" Логин"
+        android:textSize="30dp"
+        app:cornerRadius="50px" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#74FFFFFF"
+        android:backgroundTint="#74FFFFFF"
+        android:hint=" Пароль"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        app:cornerRadius="50px" />
+
+    <LinearLayout
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="96dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:backgroundTint="#7C3288"
+            android:onClick="Authorization"
+            android:text="Авторизация"
+            app:cornerRadius="50px" />
+
+        <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:backgroundTint="#7C3288"
+            android:onClick="Registration"
+            android:text="Регистрация"
+            app:cornerRadius="50px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="РЕГИСТРАЦИЯ"
+        android:textColor="#302B2B"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="241dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="-10dp"
+        app:srcCompat="@drawable/cloud" />
+
+</RelativeLayout>
